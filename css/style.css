@@ -26,6 +26,7 @@ font-family: 'Roboto', sans-serif;
   --card-border-radius: 0px 0px 4px 4px;
   --card-border-color: #eeeeee;
   --hero--bgc-color: #c4c4c4;
+  --linear-gradient: rgba(47, 48, 58, 0.4);
 }
 /* tag configuration */
 li {
@@ -43,7 +44,21 @@ ul {
   margin: 0;
   padding: 0;
 }
-img {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -129,6 +144,8 @@ body {
   margin-left: 50px;
 }
 .contacts .link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -141,14 +158,37 @@ body {
 .contacts .link:focus {
   color: var(--active-color);
 }
+
+.mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* main section */
 
 /* hero section */
 .hero {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--hero--bgc-color);
+  background-image: linear-gradient(
+      to right,
+      var(--linear-gradient),
+      var(--linear-gradient)
+    ),
+    url('../images/Teams.jpg');
 }
 .hero .title {
   max-width: 696px;
