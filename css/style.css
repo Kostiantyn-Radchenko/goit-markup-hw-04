@@ -27,6 +27,7 @@ font-family: 'Roboto', sans-serif;
   --card-border-color: #eeeeee;
   --hero--bgc-color: #c4c4c4;
   --linear-gradient: rgba(47, 48, 58, 0.4);
+  --bkg-soft-color: #f5f4fa;
 }
 /* tag configuration */
 li {
@@ -272,7 +273,18 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
-
+.featurse-icon {
+  max-width: 270px;
+  max-height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--bkg-soft-color);
+  color: var(--title-color);
+}
+.icon-featurse {
+  width: 70px;
+  height: 70px;
+}
 /* work section */
 .container .work-list {
   display: flex;
