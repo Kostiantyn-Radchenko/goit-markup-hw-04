@@ -28,6 +28,7 @@ font-family: 'Roboto', sans-serif;
   --hero--bgc-color: #c4c4c4;
   --hero-overline-color: rgba(47, 48, 58, 0.4);
   --bkg-soft-color: #f5f4fa;
+  --social-teams-color: #afb1b8;
 }
 /* tag configuration */
 li {
@@ -311,6 +312,37 @@ body {
 }
 .subtitle.teams {
   margin-bottom: 10px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.social-item {
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
+.social-link {
+  display: flex;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 12px;
+  color: var(--social-teams-color);
+}
+.social-link:hover {
+  border-radius: 50%;
+  background-color: var(--active-color);
+  color: var(--white-text-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* footer section */
 .footer {
