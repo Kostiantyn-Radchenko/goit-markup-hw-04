@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif;
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-border-radius: 0px 0px 4px 4px;
   --card-border-color: #eeeeee;
+  --teams-bkg-color: F5F4FA;
   --hero--bgc-color: #c4c4c4;
   --hero-overline-color: rgba(47, 48, 58, 0.4);
   --bkg-soft-color: #f5f4fa;
@@ -282,9 +283,11 @@ body {
   margin-bottom: 50px;
 }
 .featurse-card-icon {
-  max-width: 270px;
-  max-height: 120px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--bkg-soft-color);
   color: var(--title-color);
@@ -295,7 +298,9 @@ body {
   fill: currentColor;
 }
 /* teams section */
-
+.section.teams {
+  background-color: var(--teams-bkg-color);
+}
 .container.teams .title {
   margin-bottom: 50px;
 }
@@ -309,12 +314,11 @@ body {
   margin-left: 30px;
 }
 .card-content {
-  box-shadow: var(--box-shadow);
   text-align: center;
   padding: 30px 0;
 }
 .teams-list .card {
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--box-shadow);
   border-radius: var(--card-border-radius);
 }
 .subtitle.teams {
@@ -378,13 +382,13 @@ body {
 }
 .clients-link {
   display: flex;
-  max-width: 170px;
-  max-height: 92px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   color: var(--svg-accent-color);
   border: 1px solid var(--svg-accent-color);
   border-radius: 4px;
-  box-shadow: var(--box-shadow);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -457,7 +461,6 @@ body {
   color: var(--white-text-color);
   background-color: var(--footer-social-bkg);
   border-radius: 50%;
-  box-shadow: var(--box-shadow);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -482,7 +485,7 @@ body {
   margin-bottom: 50px;
 }
 .portofolio-section .btn {
-  max-width: 145px;
+  width: 145px;
   padding: 6px 22px;
   border-color: transparent;
   border-radius: 4px;
@@ -492,7 +495,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  background-color: var(--white-text-color);
+  background-color: var(--teams-bkg-color);
 }
 .portofolio-section .btn:hover,
 .portofolio-section .btn:focus {
