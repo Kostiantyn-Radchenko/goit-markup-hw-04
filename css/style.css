@@ -25,7 +25,7 @@ font-family: 'Roboto', sans-serif;
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-border-radius: 0px 0px 4px 4px;
   --card-border-color: #eeeeee;
-  --teams-bkg-color: F5F4FA;
+  --teams-bkg-color: #f5f4fa;
   --hero--bgc-color: #c4c4c4;
   --hero-overline-color: rgba(47, 48, 58, 0.4);
   --bkg-soft-color: #f5f4fa;
@@ -310,6 +310,7 @@ body {
 }
 
 .teams-list .item {
+  background-color: var(--white-text-color);
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
@@ -332,12 +333,10 @@ body {
   padding-right: 32px;
   padding-left: 32px;
 }
-.social-item {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-item:last-child {
-  margin-right: 0;
-}
+
 .social-link {
   display: flex;
   max-width: 44px;
@@ -374,12 +373,10 @@ body {
 .clients-list {
   display: flex;
 }
-.clients-item {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-item:last-child {
-  margin-right: 0;
-}
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -443,12 +440,10 @@ body {
   color: var(--white-text-color);
   text-transform: uppercase;
 }
-.footer-social-item {
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-item:last-child {
-  margin-right: 0;
-}
+
 .footer-social-list {
   display: flex;
   justify-content: flex-start;
@@ -484,8 +479,10 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
+.portofolio-item:not(:last-child) {
+  margin-right: 10px;
+}
 .portofolio-section .btn {
-  width: 145px;
   padding: 6px 22px;
   border-color: transparent;
   border-radius: 4px;
@@ -497,6 +494,7 @@ body {
   color: var(--title-color);
   background-color: var(--teams-bkg-color);
 }
+
 .portofolio-section .btn:hover,
 .portofolio-section .btn:focus {
   box-shadow: var(--portofolio-btn-shadow);
