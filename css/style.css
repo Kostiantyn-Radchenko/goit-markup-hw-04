@@ -269,19 +269,6 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
-
-/* work section */
-.container .work-list {
-  display: flex;
-  margin-left: -30px;
-}
-.work-list .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-}
-.container.work .title {
-  margin-bottom: 50px;
-}
 .featurse-card-icon {
   display: flex;
   justify-content: center;
@@ -297,6 +284,20 @@ body {
   height: 70px;
   fill: currentColor;
 }
+
+/* work section */
+.container .work-list {
+  display: flex;
+  margin-left: -30px;
+}
+.work-list .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.container.work .title {
+  margin-bottom: 50px;
+}
+
 /* teams section */
 .section.teams {
   background-color: var(--teams-bkg-color);
