@@ -550,6 +550,6 @@ body {
   border-left: 1px solid var(--card-border-color);
   border-right: 1px solid var(--card-border-color);
 }
-.portofolio-item:hover {
+.portofolio-item-page:hover {
   box-shadow: var(--portofolio-card-shadow);
 }
