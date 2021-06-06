@@ -207,7 +207,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-  /* text-align: center; */
+
   letter-spacing: 0.06em;
   color: var(--white-text-color);
 }
@@ -353,14 +353,15 @@ body {
 
 .social-link {
   display: flex;
-  max-width: 44px;
-  max-height: 44px;
-  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   color: var(--svg-accent-color);
 }
 .social-link:hover,
 .social-link:focus {
-  border-radius: 50%;
   background-color: var(--active-color);
   color: var(--white-text-color);
 }
